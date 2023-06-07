@@ -19,7 +19,7 @@ $PHP_CBF_PATH --version
 for FILE in $(git diff-index --cached --name-only HEAD); do
   if [[ $FILE =~ \.php$ && -f $FILE ]]; then
     echo "format: $FILE"
-    $PHP_CBF_PATH -w --standard=$ROOT_DIR/src/phpcs.xml $ROOT_DIR/$FILE
+    $PHP_CBF_PATH --standard=$ROOT_DIR/src/phpcs.xml $ROOT_DIR/$FILE
     git add $ROOT_DIR/$FILE
   fi
 done
