@@ -1,6 +1,6 @@
 ## 前提
-phpcbfのバージョンによっては、PHPバージョン7.4以下でないと動作しない
-
+phpcbfのバージョンを3.7.* にしておかないと、PHP7.4以上とかで実行時にdeprecatedがたくさん出るので注意
+phpcbfのバージョンは特に依存なく上げられるはず
 
 .git/hooks/にphpcbf-pre-commitを作成してコピペ
 
